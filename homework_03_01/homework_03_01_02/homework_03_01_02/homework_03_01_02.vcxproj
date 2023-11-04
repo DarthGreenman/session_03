@@ -132,6 +132,7 @@
     <ClCompile Include="homework_03_01_02.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="localisation.h" />
     <ClInclude Include="utilities.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
