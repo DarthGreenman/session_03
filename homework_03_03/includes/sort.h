@@ -167,7 +167,7 @@ namespace seq
 			/* Решение по приведению ключа к типу подсказанное.
 			 * Объясните пожалуйста: для чего необходимо выполнить такой "финт",
 			 * если тип элементов вектора - int. */
-			counters[*v - static_cast<std::vector<int, std::allocator<int>>::size_type>(key)]++;
+			++counters[*v - static_cast<std::vector<int, std::allocator<int>>::size_type>(key)];
 		}
 
 		for (unsigned n{}, v{}; v < counters.size(); ++v) {
