@@ -28,7 +28,7 @@ int main()
     const bag::Console_localisation locale{
         bag::Console_localisation::Code_pages::rus
     };
-
+    
     std::cout << "Исходный массив: ";
     int vec1[]{ 3,43,38,29,18,72,57,61,2,33 };
     view(vec1);

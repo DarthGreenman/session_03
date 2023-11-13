@@ -129,10 +129,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\includes\sort.cpp" />
     <ClCompile Include="homework_03_03_02.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\includes\localisation.h" />
     <ClInclude Include="..\..\includes\sort.h" />
+    <ClInclude Include="..\..\includes\utilities.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

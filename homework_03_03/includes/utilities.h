@@ -1,4 +1,4 @@
-/* utilities.h */
+п»ї/* utilities.h */
 
 #ifndef UTILITIES_H
 #define UTILITIES_H
@@ -6,10 +6,11 @@
 #include <limits>
 #include <concepts>
 #include <type_traits>
+#include <cmath>
 
 namespace seq
 {
-	/* Шаблоны функций для сравнения типов double. */
+	/* РЁР°Р±Р»РѕРЅС‹ С„СѓРЅРєС†РёР№ РґР»СЏ СЃСЂР°РІРЅРµРЅРёСЏ С‚РёРїРѕРІ double. */
 	template<typename T>
 	concept Type_comparison = std::same_as<T, double>;
 
