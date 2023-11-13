@@ -34,7 +34,7 @@ int main()
 	}
 	cout << "\nВведите точку отсчёта: ";
 	int point{}; std::cin >> point;
-	if (auto&& [first, last] = seq::search::binary_search(arr, point);
+	if (auto&& [first, last] = seq::search::binary(arr, point);
 		first != last)
 	{
 		if (const bool is_ascending{ *std::begin(arr) < *(std::end(arr) - 1) };
@@ -67,7 +67,7 @@ int main()
 			}
 
 			cout << "\nДля элемента " << *ptr << '\n';
-			if (auto&& [first, last] = seq::search::binary_search(arr, *ptr);
+			if (auto&& [first, last] = seq::search::binary(arr, *ptr);
 				first != last)
 			{
 				const bool is_ascending{ *std::begin(arr) < *(std::end(arr) - 1) };

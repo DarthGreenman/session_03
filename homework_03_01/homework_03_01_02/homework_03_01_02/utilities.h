@@ -29,7 +29,7 @@ namespace seq
 		*/
 		template<typename T, size_t N>
 			requires Appropriate_type<T>
-		static std::pair<const T*, const T*> binary_search(const T(&arr)[N], T num);
+		static std::pair<const T*, const T*> binary(const T(&arr)[N], T num);
 		
 	private: /* Закрытый интерфейс реализации */
 		/*
@@ -54,7 +54,7 @@ namespace seq
 {
 	template<typename T, size_t N>
 		requires Appropriate_type<T>
-	std::pair<const T*, const T*> search::binary_search(const T(&arr)[N], T num)
+	std::pair<const T*, const T*> search::binary(const T(&arr)[N], T num)
 	{
 		if (*arr == *(arr + N - 1) && num == *arr) {
 			return std::make_pair(arr, arr + N);
